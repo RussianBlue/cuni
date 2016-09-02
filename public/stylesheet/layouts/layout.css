@@ -1,0 +1,429 @@
+/*div {
+  outline: 1px solid red;
+}*/
+
+@font-face {
+	font-family: 'nanumbarungothic';
+	src: url('/font/nanumbarungothic.eot');
+	src: url('/font/nanumbarungothic.eot?#iefix') format('embedded-opentype'), /* ie 6,7,8 적용 embedded-opentype ie 8,9 적용*/
+	url('/font/nanumbarungothic.woff') format('woff'), /* ie 제외한 나머지 */
+	url('/font/nanumbarungothic.svg#nanumbarungothic') format('svg'); /*모바일브라우져를 위해서*/
+}
+@font-face {
+	font-family: 'nanumbarungothicbold';
+	src: url('/font/nanumbarungothicbold.eot');
+	src: url('/font/nanumbarungothicbold.eot?#iefix') format('embedded-opentype'), /* ie 6,7,8 적용 embedded-opentype ie 8,9 적용*/
+	url('/font/nanumbarungothicbold.woff') format('woff'), /* ie 제외한 나머지 */
+	url('/font/nanumbarungothicbold.svg#nanumbarungothicbold') format('svg'); /*모바일브라우져를 위해서*/
+}
+
+@font-face {
+	font-family: 'NANUMBARUNPENR';
+	src: url('/font/nanumbarunpenr.eot');
+	src: url('/font/nanumbarunpenr.eot?#iefix') format('embedded-opentype'), /* ie 6,7,8 적용 embedded-opentype ie 8,9 적용*/
+	url('/font/nanumbarunpenr.woff') format('woff'), /* ie 제외한 나머지 */
+	url('/font/nanumbarunpenr.svg#nanumbarunpenr') format('svg'); /*모바일브라우져를 위해서*/
+}
+
+@font-face {
+	font-family: 'NANUMBARUNPENB';
+	src: url('/font/nanumbarunpenb.eot');
+	src: url('/font/nanumbarunpenb.eot?#iefix') format('embedded-opentype'), /* ie 6,7,8 적용 embedded-opentype ie 8,9 적용*/
+	url('/font/nanumbarunpenb.woff') format('woff'), /* ie 제외한 나머지 */
+	url('/font/nanumbarunpenb.svg#nanumbarunpenb') format('svg'); /*모바일브라우져를 위해서*/
+}
+
+*{-webkit-font-smoothing:antialiased; -moz-font-smoothing:antialiased; font-smoothing:antialiased;}
+html,body	{width:100%; height:100%; overflow:hidden;}
+html,body, div, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p, form, fieldset, input, table, tr, th, td{margin:0; padding:0; }
+dl, dt, dd, ul, ol, li{list-style:none; }
+
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'nanumbarungothic';
+}
+
+.row { width:960px; position: relative; display: block; margin: 0 auto; }
+.center{ text-align: center; }
+
+#wrap{
+  position: relative;
+  display: block;
+  width:100%;
+  height:100%;
+  margin: 0 auto;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+
+#header{
+  margin: 0 auto;
+  position: fixed;
+  display: block;
+  width:100%;
+  height:80px;
+  background: #353535;
+  z-index: 100;
+}
+
+#main{
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+#main .left{
+  width:50%;
+  height:846px;
+  position: absolute;
+  left:0px;
+  background: url(/images/2_image_bg2_left.png) repeat-x;
+}
+
+#main .row.box-center{
+  position: relative;
+  width:960px;
+  height:846px;
+  z-index: 5;
+  left:307px;
+  background: url(/images/2_image_bg1.png) no-repeat;
+}
+
+#main .row #cuni-logo-box{
+  width: 960px;
+  position: absolute;
+  display: block;
+  top:171px;
+  left:-280px;
+}
+
+#main .row #cuni-logo-box #cuni-logo-image{
+  position: relative;
+  display: block;
+  background: url(/images/2_biglogo.png) no-repeat;
+  width:375px;
+  height:152px;
+  margin-bottom: 30px;
+}
+
+#main .row #cuni-logo-box #cuni-logo-text{
+  color:#636363;
+  font-size: 26px;
+}
+
+#main .right{
+  position: absolute;
+  width:50%;
+  height:846px;
+  top:0px;
+  right:0px;
+  background: url(/images/2_image_bg2_right.png) repeat-x;
+}
+
+#system{
+  position: relative;
+  display: block;
+  width:100%;
+  height:630px;
+  background: #e4e8eb;
+}
+
+#nav{
+  display: block;
+  position: relative;
+  font-size:0px;
+  width:960px;
+  margin: 0 auto;
+}
+
+#logo{
+  display: inline-block;
+  position: relative;
+  width:192px;
+  height:80px;
+  text-align: center;
+  background: url(/images/1_navi_logo.png) no-repeat;
+  background-position: 24px 28px;
+}
+
+#navbar{
+  display: inline-block;
+  position: relative;
+  width:640px;
+  height:80px;
+}
+
+.nav-list{
+  position: relative;
+  display: block;
+  top:30px;
+}
+
+.nav-list li{
+  width:213px;
+  display: inline-block;
+  float: left;
+  font-size: 23px;
+  color:#fff;
+  font-family: 'nanumbarungothicbold';
+  text-align: center;
+}
+
+.nav-list li a{
+  text-decoration: none;
+  color:#fff;
+}
+
+.nav-list li a:hover{
+  color:#00a0e9;
+}
+
+.nav-list li a:visited{
+  color:#fff;
+}
+
+.nav-list li a:visited{
+  color:#fff;
+}
+
+#language{
+  position: relative;
+  display: inline-block;
+  width:128px;
+  height:80px;
+  float: right;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#language div.language{
+  color:#0707070;
+  font-size: 15px;
+  font-family: 'nanumbarungothicbold';
+  width:46px;
+  height:25px;
+  text-align: center;
+  line-height: 25px;
+  display: inline-block;
+  position: relative;
+  top:30px;
+}
+
+#language div.language a{
+  color:#707070;
+  text-decoration: none;
+  padding:3px;
+}
+
+#language div.language a:hover{
+  color:#00a0e9;
+  border-radius: 10px;
+  border:2px solid #00a0e9;
+}
+
+#language div.language a.clicked{
+  color:#00a0e9;
+  border-radius: 10px;
+  border:2px solid #00a0e9;
+}
+
+#system-title{
+  height:132px;
+}
+
+p.system-title{
+  position: relative;
+  display: block;
+  top:53px;
+  font-size: 32px;
+  color:#bac4cc;
+  font-family: 'nanumbarungothicbold';
+}
+
+p.system-desciption-header {
+  font-size: 29px;
+  color:#3b3c3d;
+  font-family: 'nanumbarungothicbold';
+  font-weight: bold;
+}
+
+p.system-sub { position: relative; display: block; font-size: 22px; color:#798792; }
+
+.pt40{ padding-top:40px; }
+.pt30{ padding-top:30px; }
+.pt20{ padding-top:20px; }
+.pt10{ padding-top:10px; }
+
+#introduce{
+
+}
+
+#introduce #bracket{
+  height:305px;
+}
+
+#introduce #bracket img{
+  margin-top:70px;
+}
+
+#introduce #introduce-box{
+  position: relative;
+  display: block;
+  width:960px;
+  height:171px;
+  font-size:0px;
+  background: url(/images/4_logo_box.png) no-repeat;
+  background-position: 5px 0px;
+}
+
+#introduce #introduce-box .box{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  line-height: 35px;
+}
+
+#introduce #introduce-box .box-1{
+  top:38px;
+  width:360px;
+  font-size:18px;
+  color:#575757;
+  font-family: 'nanumbarungothic';
+}
+
+#introduce #introduce-box .box-2{
+  top:50px;
+  width:240px;
+  font-size:29px;
+  color:#3b3c3d;
+  font-family: 'nanumbarungothic';
+}
+
+#product{
+  position: relative;
+  display: block;
+  margin-top:129px;
+  height:983px;
+}
+
+#product h3{
+  font-size: 29px;
+  color:#3b3c3d;
+  margin-left:32px;
+  margin-bottom:57px;
+}
+
+#product h4{
+  font-size: 25px;
+  color:#3d3c3d;
+}
+
+#product #product-detail{
+  display: block;
+  position: relative;
+  width:960px;
+  height:810px;
+  background: url(/images/5_bg_image.png) no-repeat;
+}
+
+#product #product-detail .detail-box{
+  position: relative;
+  display: block;
+  font-size:18.5px;
+  color:#575757;
+  line-height: 40px;
+  font-family: 'nanumbarungothic';
+}
+
+#product #product-detail .detail-box.box1{
+  left:312px;
+  top:70px;
+}
+
+#product #product-detail .detail-box.box2{
+  left:52px;
+  top:283px;
+}
+
+#product #product-detail .detail-box.box3{
+  left:312px;
+  top:385px;
+}
+
+#payment{
+  position: relative;
+  display: block;
+  width:960px;
+  height:260px;
+  margin: 0 auto;
+  margin-bottom:42px;
+}
+
+#payment-box{
+  display: block;
+  position: relative;
+  border-radius: 20px;
+  border:3px solid #e0dede;
+  width:960px;
+  height:260px;
+  text-align: center;
+}
+
+#payment-box h3{
+  position: relative;
+  display: block;
+  font-size: 29px;
+  color:#3b3c3d;
+  margin-top:40px;
+	margin-bottom:28px;
+}
+
+#payment-box p{
+  font-size:20px;
+  color:#575757;
+	margin-bottom: 24px;
+}
+
+#payment-box #payment-btn{
+  width:230px;
+  height:70px;
+  color:#fff;
+  background: #00a0e9;
+  border-radius: 40px;
+  box-shadow: 3px 3px 3px #007ab2;
+  font-size: 28px;
+	position: relative;
+	margin: 0 auto;
+	margin-top:20px;
+	line-height: 70px;
+	font-weight: bold;
+}
+
+#footer{
+  display: block;
+  position: relative;
+  width:100%;
+  height:132px;
+  background-color: #eaeaea;
+}
+
+#footer p.company{
+  position: relative;
+  display: block;
+  font-size:14px;
+  color: #585858;
+  font-weight: bold;
+  line-height: 18px;
+  margin-top:36px;
+	padding-top:35px;
+  text-indent: 40px;
+}
+
+#footer p.company-description
+{
+  font-size: 14px;
+  color: #585858;
+  text-indent: 40px;
+	padding-top:10px;
+}

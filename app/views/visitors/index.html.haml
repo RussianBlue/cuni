@@ -1,0 +1,82 @@
+%div{:id => 'header'}
+  .row
+    %div{:id => 'nav'}
+      %div{:id => 'logo'}
+      %div{:id => 'navbar'}
+        %ul.nav-list
+          %li
+            %a{:href => "#system"}=t 'menu1'
+          %li
+            %a{:href => "#introduce"}=t 'menu2'
+          %li
+            %a{:href => "#payment"} 구매하기
+
+      %div{:id => 'language'}
+        %div.language
+          -# %a{:href => ApplicationHelper::set_locale } ENG
+          %a{:href => "/"} ENG
+        %div.language
+          %a.clicked{:href => "/"} KOR
+%div{:id => 'wrap'}
+  %div{:id => 'main'}
+    .left
+    .row.box-center
+      %div{:id => 'cuni-logo-box'}
+        %div{:id => 'cuni-logo-image'}
+        %div{:id => 'cuni-logo-text'}
+          %p 큐니는 하드웨어와 콘텐츠의 융합을 통해서
+          %p 사용자에게 최상의 교육 에코시스템을 제공합니다.
+    .right
+  %div{:id => 'system'}
+    .row
+      %div.center{:id => 'system-title'}
+        %p.system-title EDUCATIONAL SERVICE ECO-TECH SYSTEM
+      %img{:src => '/images/3_image_circle.png', :width => '100%'}
+      %div.center
+        %p.system-desciption-header.pt20 큐니란?
+        %p.system-sub.pt20 프로젝트빔 & 전자인식펜 + 콘텐츠&서비스(교육)를 융합하여
+        %p.system-sub.pt10 사용자 중심에서 교육의 가치를 플러스 해드리는 교육 에코시스템입니다.
+  %div{:id => 'introduce'}
+    .row
+      %div{:id => 'bracket'}
+        %img{:src => '/images/3_image_bracket.png', :width => '100%'}
+      %div{:id => 'introduce-box'}
+        %div.box.box-1
+          %p 하드웨어의 미니멀한 장점을 활용하여,
+          %p 시공간의 제약을 받지 않는 움직이는
+          %p 스마트 교실 구현이 가능합니다.
+        %div.box.box-2
+          %p 특장점
+        %div.box.box-1
+          %p 인터렉티브한 교육용 콘텐츠와의
+          %p 결합으로 이용자간 공유 참여
+          %p 학습이 가능합니다.
+      %div{:id => 'product'}
+        %h3 제품 별 특징
+        %div{:id => 'product-detail'}
+          %div.detail-box.box1
+            %p · SK 텔레콤의 믿을 수 있는 품질
+            %p · 초소형 & 경량화를 통한 휴대성 용이
+            %p · 와이파이와 미러링 기능을 활용한 디바이스(스마트폰, 태블릿)연동
+          %div.detail-box.box2
+            %p · 빔 프로젝트가 영사한 화면에 필기가 가능한 전자펜
+            %p · 초소형 & 경량화를 통한 휴대성 용이
+            %p · 블루투스 기능을 활용한 디바이스(스마트폰, 태블릿)연동
+          %div.detail-box.box3
+            %h4 OLL서비스
+            %p · 다양한 인터렉티브 요소를 가미한 교육서비스 제공
+            %p · 학습자 수준을 고려한 스토리텔링형 교육용 컨텐츠 제공
+            %p · 이용자의 활동, 학습성취수준을 분석하고 그 결과를 토대로 개인 별 최적화된
+            %p &nbsp;&nbsp;콘텐츠 & 서비스를 큐레이션 해주는 글로벌 교육 서비스 플랫폼
+
+  %div{:id => 'payment'}
+    .row
+      %div{:id => 'payment-box'}
+        %h3 구매하기
+        %p 큐니 패키지에 대한 구매를 원하시면 아래의 구매하기 버튼을 클릭하여 주세요.
+        %div{:id => 'payment-btn'} 구매하기
+  %div{:id => 'footer'}
+    .row
+      %p.company (주)WEDU COMMNUNICATIONS
+      %p.company-description 서울특별시 마포구 성암로330 DMC첨단산업센터 704호 (우)121-912 | TEL. 02) 3153-7467 E-MAIL:wedu@wedu.co.kr
+      %p.company-description COPYRIGHT WEDU COMMNUNICATIONS. ALL RIGHTS RESERVED.
