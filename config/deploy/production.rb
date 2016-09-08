@@ -7,7 +7,7 @@ set :stage, :production
 # unless any hosts have the primary property set.
 role :app, %w{ubuntu@ec2-52-88-87-231.us-west-2.compute.amazonaws.com}
 role :web, %w{ubuntu@ec2-52-88-87-231.us-west-2.compute.amazonaws.com}
-#role :db,  %w{ubuntu@ec2-52-88-87-231.us-west-2.compute.amazonaws.com}
+role :db,  %w{ubuntu@ec2-52-88-87-231.us-west-2.compute.amazonaws.com}
 
 # Extended Server Syntax
 # ======================
