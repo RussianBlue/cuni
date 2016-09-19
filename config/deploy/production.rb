@@ -39,7 +39,7 @@ server 'ubuntu@ec2-52-88-87-231.us-west-2.compute.amazonaws.com', user: 'ubuntu'
 #   roles: %w{web app}
 #   ssh_options: {
 #     user: 'deploy', # overrides user setting above
-#     keys: %w(/home/deploy/.ssh/id_rsa),
+#     keys: %w(/home/ubuntu/.ssh/id_rsa),
 #     forward_agent: false,
 #     auth_methods: %w(publickey wlsdl0301)
 #     # password: 'please use keys'
