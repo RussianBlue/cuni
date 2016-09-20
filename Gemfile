@@ -59,6 +59,7 @@ group :development do
   gem 'capistrano-rvm'
   gem 'capistrano-ssh-doctor', '~> 1.0'
   gem 'capistrano-rails-console'
+  gem 'capistrano-passenger'
   gem 'html2haml'
   gem 'hub', :require=>nil
   gem 'rails_apps_pages'

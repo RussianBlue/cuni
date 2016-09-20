@@ -5,6 +5,7 @@ require 'capistrano/setup'
 require 'capistrano/deploy'
 require 'capistrano/bundler'
 require 'capistrano/rails'
+require 'capistrano/passenger'
 require 'capistrano/ssh_doctor'
 
 # Includes tasks from other gems included in your Gemfile
@@ -22,8 +23,8 @@ require 'capistrano/rvm'
 # require 'capistrano/rbenv'
 # require 'capistrano/chruby'
 # require 'capistrano/bundler'
-# require 'capistrano/rails/assets'
-# require 'capistrano/rails/migrations'
+require 'capistrano/rails/assets'
+require 'capistrano/rails/migrations'
 
 set :rvm_type, :user
 set :rvm_ruby_version, '2.3.0'
