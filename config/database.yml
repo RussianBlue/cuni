@@ -28,7 +28,7 @@ test:
   database: cuni_test
   pool: 5
   username: root
-  password:
+  password: wlsdl0301
   host: localhost
 
 production:
@@ -37,6 +37,6 @@ production:
   reconnect: false
   database: cuni_production
   pool: 5
-  username: ubuntu
-  password:
+  username: root
+  password: wlsdl0301
   host: localhost
