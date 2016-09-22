@@ -15,7 +15,7 @@ development:
   database: cuni_development
   pool: 5
   username: root
-  password: 
+  password:
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -28,7 +28,7 @@ test:
   database: cuni_test
   pool: 5
   username: root
-  password: 
+  password:
   host: localhost
 
 production:
@@ -37,6 +37,6 @@ production:
   reconnect: false
   database: cuni_production
   pool: 5
-  username: root
-  password: 
+  username: ubuntu
+  password:
   host: localhost

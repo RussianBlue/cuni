@@ -13,3 +13,23 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(document).ready(function($) {
+  $('#header').find('a[href*="#"]').each(function(){
+    var target = this.hash;
+    $target = $(target);
+
+    $(this).attr("top", $target.offset().top);
+  })
+
+  $('a[href*="#"]').click(function(){
+    var target = this.hash;
+    $target = $(target);
+
+    $('#wrap').stop().animate({
+        'scrollTop': $(this).attr("top")
+    }, 900, 'swing', function () {
+        window.location.hash = target;
+    });
+  })
+});

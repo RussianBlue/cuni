@@ -5,12 +5,11 @@
       %div{:id => 'navbar'}
         %ul.nav-list
           %li
-            %a{:href => "#system"}=t 'menu1'
+            %a{:href => "#system", :class=> 'menu'}=t 'menu1'
           %li
-            %a{:href => "#introduce"}=t 'menu2'
+            %a{:href => "#introduce", :class=>'menu'}=t 'menu2'
           %li
-            %a{:href => "#payment"} 구매하기
-
+            %a{:href => "#payment", :class => 'menu'} 구매하기
       %div{:id => 'language'}
         %div.language
           -# %a{:href => ApplicationHelper::set_locale } ENG
